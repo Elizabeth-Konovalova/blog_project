@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(250, 128, 128);
+        }
+        header {
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        ul {
+            display: inline-block;
+            margin: 100px;
+            padding: 100px 0px 0px 0px;
+            margin-left: 250px;
+            width: 200px;
+            height: 200px;
+            border: 5px solid white;
+            border-radius: 15%;
+            background-color: greenyellow;
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        div {
+            margin: 100px;
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            border-radius: 20%;
+            background-color: yellow;
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Blog</a>
+    </header>
+    {% block content %}
+    {% endblock content %}
+
+</body>
+</html>
