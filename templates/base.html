@@ -8,7 +8,7 @@
     <title>Document</title>
     <style>
         body {
-            background-color: rgb(250, 128, 128);
+            background-color: rgb(58, 58, 58);
         }
         header {
             text-align: center;
@@ -25,7 +25,7 @@
             height: 200px;
             border: 5px solid white;
             border-radius: 15%;
-            background-color: greenyellow;
+            background-color: green;
             text-align: center;
             font-weight: bolder;
             font-size: larger;
@@ -41,6 +41,9 @@
             font-weight: bolder;
             font-size: larger;
         }
+        a {
+            color: white;
+        }
 
 
     </style>
@@ -48,6 +51,7 @@
 <body>
     <header>
         <a href="{% url 'home' %}">Blog</a>
+        <a href="{% url 'post_new' %}">Add post</a>
     </header>
     {% block content %}
     {% endblock content %}
